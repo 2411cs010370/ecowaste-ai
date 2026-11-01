@@ -1,0 +1,58 @@
+[
+  {
+    "filename": "1_plastic_bottles.jpg",
+    "name": "Crushed Plastic Bottles",
+    "type": "Plastic",
+    "category": "recyclable",
+    "material": "Polyethylene Terephthalate (PET #1)",
+    "path": "/samples/1_plastic_bottles.jpg"
+  },
+  {
+    "filename": "2_aluminum_soda_can.jpg",
+    "name": "Aluminum Soda Can",
+    "type": "Metal",
+    "category": "recyclable",
+    "material": "Aluminum (Alloy 3104 / 5182)",
+    "path": "/samples/2_aluminum_soda_can.jpg"
+  },
+  {
+    "filename": "3_cardboard_packaging.jpg",
+    "name": "Cardboard Packaging Box",
+    "type": "Paper",
+    "category": "recyclable",
+    "material": "Corrugated Cardboard / Cellulose Fiber",
+    "path": "/samples/3_cardboard_packaging.jpg"
+  },
+  {
+    "filename": "4_banana_peel_organic.jpg",
+    "name": "Banana Peel & Food Waste",
+    "type": "Organic",
+    "category": "organic",
+    "material": "Biodegradable Organic Biomass",
+    "path": "/samples/4_banana_peel_organic.jpg"
+  },
+  {
+    "filename": "5_glass_bottle.jpg",
+    "name": "Glass Beverage Bottle",
+    "type": "Glass",
+    "category": "recyclable",
+    "material": "Soda-Lime Silica Glass",
+    "path": "/samples/5_glass_bottle.jpg"
+  },
+  {
+    "filename": "6_electronic_circuit_board.jpg",
+    "name": "Circuit Board / E-Waste",
+    "type": "E-Waste",
+    "category": "e-waste",
+    "material": "FR-4 PCB, Silicon, Trace Copper & Gold",
+    "path": "/samples/6_electronic_circuit_board.jpg"
+  },
+  {
+    "filename": "7_alkaline_batteries_hazardous.jpg",
+    "name": "Spent Batteries (Hazardous)",
+    "type": "Hazardous",
+    "category": "hazardous",
+    "material": "Zinc-Manganese Dioxide / Heavy Metals",
+    "path": "/samples/7_alkaline_batteries_hazardous.jpg"
+  }
+]
