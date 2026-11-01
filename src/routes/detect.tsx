@@ -23,6 +23,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { PageShell, SectionTitle } from "@/components/eco/Section";
 import { classifyWaste, type WasteResult } from "@/lib/waste.functions";
+import { recordUserScan } from "@/lib/auth";
 
 export const Route = createFileRoute("/detect")({
   head: () => ({
@@ -219,7 +220,15 @@ function Detect() {
       setInferenceTime(Math.round(performance.now() - startTime));
       return res;
     },
-    onSuccess: (r) => toast.success(`Identified: ${r.itemName} (${(r.confidence * 100).toFixed(1)}%)`),
+    onSuccess: (r) => {
+      toast.success(`Identified: ${r.itemName} (${(r.confidence * 100).toFixed(1)}%)`);
+      recordUserScan({
+        wasteType: r.itemName,
+        category: r.category,
+        confidence: r.confidence * 100,
+        recommendation: r.disposalAdvice,
+      });
+    },
     onError: (e) => {
       toast.error(
         e.message?.includes("429")
